@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA compatiable" content="id = edge" />
+    <title>booking for pet addoption</title>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+    body {
+      /* background-image: url(bg3.jpeg); */
+      background-size: 100% 740px;
+      font-family: "mulish", sans-serif;
+    }
+    .container{
+        background-color: #f2eeee;
+        padding: 20px;
+        height: calc(100vh - 90px);
+    }
+    .title{
+        background-color: #606060;
+        padding: 10px;
+        font-size: 20px;
+        color: #ffffff;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    .formWrapper{
+  
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      width: 500px;
+      margin: 30px auto;
+      padding: 20px 0;
+
+    }
+    .formWrapper .form{
+      padding: 20px;
+    }
+    .formWrapper p{
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .formWrapper input{
+      border: none;
+      border-bottom: 1px solid #000000;
+      padding: 10px;
+      width: 70%;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    button{
+      display: block;
+      padding: 15px 50px;
+      margin: 30px auto;
+      background-color: #606060;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .thankYou{
+      background-color: #606060;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 10px;
+      font-size: 30px !important;
+    }
+  </style>
+
+  <body>    
+    <p class="title">Booking</p>
+    <div class="container">
+        <div class="formWrapper">
+          <div class="form">
+            <p>Please insert following details to adopt a pet</p>
+            <input type="text" placeholder="Full name"/>
+            <input type="text" placeholder="Mobile no."/>
+            <input type="text" placeholder="Pet name"/>
+            <input type="text" placeholder="Address"/>
+            <input type="text" placeholder="Why do you want to adopt a pet?"/>
+            <button>Adopt now</button>
+          </div>
+          <p class="thankYou">
+            Thank you!!
+          </p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Dome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #333;
+            width: 30px;
+            height: 3px;
+            display: block;
+            margin: 6px 0;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-right: 15px;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #ff8c00;
+        }
+
+        .home-card {
+            border: 1px solid #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .fa {
+            font-size: 24px;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url('./image/homeimg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 175px;
+            text-overflow: none;
+            left: 30px;
+            width: 70vw;
+        }
+
+        /* Style for the top left content */
+        .text {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .text h2 {
+            color: orange;
+        }
+
+        /* Style for the bottom content */
+        .bottom {
+            text-align: center;
+        }
+
+        .bottom p {
+            margin-bottom: 0;
+        }
+
+        .bottom span {
+            font-weight: bold;
+        }
+
+        .bottom {
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .bottom p {
+            margin-bottom: 0;
+        }
+
+        .bottom span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="">
+            <span style="font-weight: bolder;">
+                <span style="color: orange; font-size: 48PX;">Pet</span></span> <span style="color: black; font-size: 48px;">Dome
+            </span>
+        </a>
+        <ul class="navbar-nav" id="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contactpage.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <div class="card home-card">
+                        <i style="font-size:24px" class="fa">&#xf015;</i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="container-fluid hero">
+        <!-- Top Left Content -->
+        <div class="row align-items-end justify-content-start">
+            <div class="col-md-6 offset-md-3 text-center text-sm-start text-lg-center">
+                <div class="text">
+                    <b>
+                        <h2><span style="color: orange;">"ANIMALS</span><span
+                                style="color:rgba(46, 38, 38, 0.864);"> Needs
+                        </h2>
+                        <h2><span style="color:rgba(46, 38, 38, 0.864);">Your Help!"</span>
+                        </h2>
+                    </b>
+
+                    <p class="fs-5"
+                        style="color:rgba(46, 38, 38, 0.864);">
+                        Browse your favourite animals and pet them and let<br> both of you het smile on each others face.
+                    </p>
+                    <p style="color:rgba(46, 38, 38, 0.864);">
+                
+                        Want to adopt one?
+                    </p> 
+                    <button style="background-color: rgba(245, 166, 48, 1); height: 45px; width: 150px; border-radius: 24px; margin-left: 50px;"  ><a class="nav-link" href="./booking.html">Adopt a Pet</a>
+                    </button>                                                                             
+                        
+                        
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Content -->
+        <div class="row align-items-end justify-content-center">
+            <div class="col-md-6 offset-md-3 text-center text-sm-start text-lg-center">
+                <div class="bottom">
+                    <b>
+                        <p class="fs-5"
+                            style="color:rgba(46, 38, 38, 0.864);">"IT TAKES NOTHING AWAY FROM A <span
+                                style="color: orange;" class="fw-bold">HUMAN</span> TO BE<br>KIND TO AN <span
+                                style="color: orange;" class="fw-bold">ANIMAL</span>"</p>
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            document.getElementById('navbar-nav').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA compatiable" content="id = edge" />
+    <title>Adopt pet</title>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+    body {
+      background-image: url(bg3.jpeg);
+      background-size: 100% 740px;
+      font-family: "mulish", sans-serif;
+    }
+    .container{
+        background-color: white;
+    }
+    .searchWrapper{
+        display: flex;
+        margin: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .searchWrapper input{
+        width: 100%;
+        margin-right: 20px;
+        padding: 10px;
+        border: 1px solid #959595;
+        color: #AAAAAA;
+        border-radius: 10px;
+    }
+
+    .searchWrapper button{
+        padding: 10px;
+        color: #AAAAAA;
+        background: transparent;
+        border: 1px solid #959595;
+    }
+
+    .imageWrapper{
+        
+        background: #EEEEEE;
+        margin: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .imageWrapper .card{
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .cardWrapper{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .imageWrapper .card img{
+        width: 250px;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+    .textWrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card p{
+        font-size: 15px;
+    }
+    .title{
+        background-color: #434343;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+  </style>
+
+  <body>    
+    <p class="title">Free Shipping Across India! Customised Gifts for Pets & Proudly "Made in India" </p>
+    <div class="container">
+        <div class="searchWrapper">
+            <input type="text" placeholder="Enter Breed"/>
+            <input type="text" placeholder="Enter your city"/>
+            <input type="text" placeholder="Enter your state"/>
+            <button>Search</button>
+        </div>
+
+        <div class="imageWrapper">
+            <div class="cardWrapper">
+                <div class="card">
+                    <img src="./image/dog1.png"/>
+                    <div class="textWrapper">
+                        <h3>Tommy</h3>
+                        <p>Mumbai</p>
+                    </div>
+                    <p>10 years old</p>
+                </div>
+                <div class="card">
+                    <img src="./image/dog2.png"/>
+                    <div class="textWrapper">
+                        <h3>Shiro</h3>
+                        <p>Kolkata</p>
+                    </div>
+                    <p>3 years old</p>
+                </div> 
+                <div class="card">
+                    <img src="./image/dog3.png"/>
+                    <div class="textWrapper">
+                        <h3>Raja</h3>
+                        <p>Upleta</p>
+                    </div>
+                    <p>6 years old</p>
+                </div> 
+            </div>
+            <div class="cardWrapper">
+                <div class="card">
+                    <img src="./image/dog4.png"/>
+                    <div class="textWrapper">
+                        <h3>Charlie</h3>
+                        <p>Ahmedabad</p>
+                    </div>
+                    <p>1 years old</p>
+                </div>
+                <div class="card">
+                    <img src="./image/dog5.png"/>
+                    <div class="textWrapper">
+                        <h3>Sumo</h3>
+                        <p>Delhi</p>
+                    </div>
+                    <p>4 years old</p>
+                </div> 
+                <div class="card">
+                    <img src="./image/dog6.png"/>
+                    <div class="textWrapper">
+                        <h3>Mini</h3>
+                        <p>Rajkot</p>
+                    </div>
+                    <p>2 years old</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
