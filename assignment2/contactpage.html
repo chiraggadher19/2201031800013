@@ -33,14 +33,37 @@
             font-size: 40px;
 
         }
-        /* .bottom{
-            border-color: black;
-        } */
-            
+        .titleWrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .titleWrapper button{
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .titleWrapper{
+        flex-direction: column ;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .adress{
+        flex-direction: column;
+    }
+}
+  
         
     </style>
 </head>
 <body>
+    <div class="titleWrapper">
+        <h1>Contact us</h1>
+        <p>Chirag Gadher</p>
+    </div>
     <div class="adress">
         <div class="loc">
         <p>adress</p>

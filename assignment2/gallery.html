@@ -11,24 +11,73 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles123.css"> 
+    <!-- <link rel="stylesheet" href="styles123.css">  -->
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+    }
+
+
     .col-md-4 img{
         width: 100%;
         height: 300px;
         padding: 10px;
+        background-color: #3498db;
+        margin: 10px;
+        animation: moveBox 5s infinite alternate;
+        
     }
     .row2 .col-md-4 img{
         width: 100%;
         height: 400px;
+        background-color: #3498db;
+        margin: 10px;
+        animation: moveBox 5s infinite alternate;
     }
-    .col-md-4:hover{
-        transition: transform 0.3s ease-in-out;
-        transform: scale(1.1);
+
+    @keyframes moveBox {
+        0% {
+            transform: translateX(-400px);
+        }
+        100% {
+            transform: translateX(400px);
+        }
     }
+    .titleWrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .titleWrapper button{
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+
+
+    /* .col-md-4:hover{ */
+        /* transition: transform 0.3s ease-in-out; */
+        /* transform: scale(1.1); */
+        /* animation: moveBox 2s infinite alternate; */
+    /* } */
 </style>
 <body>
+
     <div class="container">
         <div class="row">
             <div class="col-md-4">
